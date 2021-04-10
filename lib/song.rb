@@ -32,6 +32,7 @@ attr_accessor :name, :artist, :genre
     @@genres.each do |key|
       if genre_count.has_key?(key)
           genre_count[key] += 1
+          binding.pry
       else genre_count[key] = 1
       end
     end
